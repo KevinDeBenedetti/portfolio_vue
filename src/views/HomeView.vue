@@ -1,6 +1,4 @@
 <script setup>
-import TheWelcome from '../components/TheWelcome.vue'
-
 // Initialization for ES Users
 import {
   Ripple,
@@ -15,7 +13,6 @@ onMounted(() => {
 
 <template>
   <main>
-    <TheWelcome />
 
     <button
         type="button"
