@@ -1,11 +1,21 @@
 <script setup>
-import NavBarDocumentation from "@/components/NavBarDocumentation.vue";
-
+import SideNav from "@/components/SideNav.vue";
 </script>
 
 <template>
 
-  <NavBarDocumentation/>
+  <SideNav documentationTitle="Documentation">
+    <template v-slot:default>
+      <div>
+        Hello world
+
+        <nav>
+          <RouterLink to="/documentation/vue">Vue</RouterLink>
+          <RouterLink to="/documentation/symfony">Symfony</RouterLink>
+        </nav>
+      </div>
+    </template>
+  </SideNav>
 
 </template>
 

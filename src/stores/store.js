@@ -1,10 +1,35 @@
 import { defineStore } from "pinia";
 
-export const useMenuStore = defineStore('menu', {
+export const useStore = defineStore('store', {
     state: () => ({
+        /*Navigation*/
         menuItems: [
-            { label: 'Vue', link: '/vue' },
-            { label: 'Symfony', link: '/symfony' }
+            { label: 'Accueil', link: '/' },
+            {
+                label: 'Vue',
+                link: '/vue',
+                icon: 'vuejs',
+                color: 'text-green-500',
+                subMenus: [
+                    {
+                        label: 'Installation',
+                        link: '/install'
+                    },
+                    {
+                        label: 'Fontawesome',
+                        link: '/fontawesome'
+                    }
+                ]
+            },
+            {
+                label: 'Symfony',
+                link: '/symfony',
+                icon: 'symfony',
+                color: 'text-black',
+                subMenus: [
+                    { label: 'Installation', link: '/install'}
+                ]
+            }
         ],
     }),
     // Pour obtenir les éléments du menu

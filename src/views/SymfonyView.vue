@@ -1,9 +1,9 @@
 <script setup>
-  import NavBarDocumentation from "@/components/NavBarDocumentation.vue";
+  import SideNav from "@/components/SideNav.vue";
 </script>
 
 <template>
-  <NavBarDocumentation/>
+  <SideNav/>
 </template>
 
 <style scoped>

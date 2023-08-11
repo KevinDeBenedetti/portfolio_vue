@@ -8,8 +8,8 @@ const props = defineProps({
 
 <template>
 
-  <header class="bg-green-100 h-20 w-full flex items-center justify-center py-2">
-    <h1 class="text-center text-2xl text-primary">{{ documentationTitle }}</h1>
+  <header class="bg-slate-300 h-20 flex items-center justify-center py-2">
+    <h1 class="text-2xl text-primary">{{ documentationTitle }}</h1>
   </header>
 
 </template>

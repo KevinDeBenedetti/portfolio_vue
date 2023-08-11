@@ -18,12 +18,13 @@ const router = createRouter({
       component: DocumentationView
     },
     {
-      path: '/vue',
+      /* Les routes sont facultatives et changent */
+      path: '/documentation/vue/:slug?',
       name: 'vue',
       component: VueView
     },
     {
-      path: '/symfony',
+      path: '/documentation/symfony/:slug?',
       name: 'symfony',
       component: SymfonyView
     }

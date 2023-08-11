@@ -1,0 +1,74 @@
+[
+  {
+    "subCategory": "install",
+    "subCategoryTitle": "Installation de Vue JS V3",
+    "items": [
+      {
+        "title": "Installer vue à partir du terminal.",
+        "content": "Saisir les commandes dans le terminal à la racine du projet.",
+        "language": "shell",
+        "code": "> npm create vue@latest\n> cd my-project"
+      },
+      {
+        "title": "Installer tailwind, postcss & autoprefixer.",
+        "content": "Saisir les commandes dans le terminal à la racine du projet.",
+        "language": "shell",
+        "code": "> npm create vue@latest\n> cd my-project"
+      },
+      {
+        "title": "Modifier le fichier tailwind.config.js\n",
+        "content": "Saisir les commandes dans le terminal à la racine du projet.",
+        "language": "javascript",
+        "code": "/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  content: [\n    \"./index.html\",\n    \"./src/**/*.{vue,js,ts,jsx,tsx}\",\n    \"./node_modules/tw-elements/dist/js/**/*.js\"\n  ],\n  theme: {\n    extend: {},\n  },\n  darkMode: \"class\",\n  plugins: [require(\"tw-elements/dist/plugin.cjs\")]\n}"
+      },
+      {
+        "title": "Modifier le fichier ./src/assets/main.css",
+        "content": "Saisir les commandes dans le terminal à la racine du projet.",
+        "language": "css",
+        "code": "@tailwind base;\n@tailwind components;\n@tailwind utilities;"
+      },
+      {
+        "title": "Installer Tailwind Elements",
+        "content": "Saisir les commandes dans le terminal à la racine du projet.",
+        "language": "shell",
+        "code": "> npm install tw-elements"
+      }
+    ]
+  },
+  {
+    "subCategory": "fontawesome",
+    "subCategoryTitle": "Installation de Fontawesome",
+    "items": [
+      {
+        "title": "Installer vue à partir du terminal.",
+        "content": "Saisir les commandes dans le terminal à la racine du projet.",
+        "language": "shell",
+        "code": "> npm create vue@latest\n> cd my-project"
+      },
+      {
+        "title": "Installer tailwind, postcss & autoprefixer.",
+        "content": "Saisir les commandes dans le terminal à la racine du projet.",
+        "language": "shell",
+        "code": "> npm create vue@latest\n> cd my-project"
+      },
+      {
+        "title": "Modifier le fichier tailwind.config.js\n",
+        "content": "Saisir les commandes dans le terminal à la racine du projet.",
+        "language": "javascript",
+        "code": "/** @type {import('tailwindcss').Config} */\nmodule.exports = {\n  content: [\n    \"./index.html\",\n    \"./src/**/*.{vue,js,ts,jsx,tsx}\",\n    \"./node_modules/tw-elements/dist/js/**/*.js\"\n  ],\n  theme: {\n    extend: {},\n  },\n  darkMode: \"class\",\n  plugins: [require(\"tw-elements/dist/plugin.cjs\")]\n}"
+      },
+      {
+        "title": "Modifier le fichier ./src/assets/main.css",
+        "content": "Saisir les commandes dans le terminal à la racine du projet.",
+        "language": "css",
+        "code": "@tailwind base;\n@tailwind components;\n@tailwind utilities;"
+      },
+      {
+        "title": "Installer Tailwind Elements",
+        "content": "Saisir les commandes dans le terminal à la racine du projet.",
+        "language": "shell",
+        "code": "> npm install tw-elements"
+      }
+    ]
+  }
+]

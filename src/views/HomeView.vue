@@ -13,7 +13,6 @@ onMounted(() => {
 
 <template>
   <main>
-
     <button
         type="button"
         data-te-ripple-init
