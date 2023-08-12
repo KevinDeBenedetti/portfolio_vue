@@ -17,7 +17,9 @@ const menuItems = menuStore.menuItems;
       <li class="p-2 flex">
         <span>{{ item.number }}</span>
         <div>-</div>
-        <span>{{ item.label }}</span>
+        <RouterLink :to="item.link">
+          <span>{{ item.label }}</span>
+        </RouterLink>
       </li>
     </ul>
   </nav>

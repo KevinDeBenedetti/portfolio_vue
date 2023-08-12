@@ -2,10 +2,11 @@
   import vueData from "@/stores/documentation/vue.json";
   import {useRoute} from "vue-router";
   import {onBeforeMount, onMounted, ref, watchEffect} from "vue";
-  import SideNav from "@/components/SideNav.vue";
+  import SideNav from "@/components/Documentation/SideNav.vue";
   import Prism from 'prismjs';
   import 'prismjs/themes/prism-okaidia.css';
   import {initTE, Sidenav} from "tw-elements";
+  import Content from "@/components/Documentation/Content.vue";
 
   const currentSubCategory = ref(null);
   const route = useRoute();
@@ -39,22 +40,15 @@
 </script>
 
 <template>
+
   <SideNav v-if="currentSubCategory !== null" :documentationTitle="'Vue JS - ' +currentSubCategory.subCategoryTitle">
+
     <template v-slot:default>
 
-      <div class="container xl:max-w-5xl py-20 px-5 m-auto overflow-auto">
-
-        <section class="w-fit m-auto">
-          <div v-for="item in currentSubCategory.items">
-            <h3 class="mb-4">{{ item.title }}</h3>
-            <p>{{ item.content }}</p>
-            <pre class="w-fit"><code :class="'language-' + item.language" >{{ item.code }}</code></pre>
-          </div>
-        </section>
-
-      </div>
+      <Content :items="currentSubCategory.items"/>
 
     </template>
+
   </SideNav>
 
   <SideNav v-else documentationTitle="Bienvenue dans ma documentation de Vue V3">

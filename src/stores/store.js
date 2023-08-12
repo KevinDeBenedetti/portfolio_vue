@@ -21,11 +21,11 @@ export const useStore = defineStore('store', {
                 subMenus: [
                     {
                         label: 'Installation',
-                        link: '/install'
+                        link: '/documentation/vue/install'
                     },
                     {
                         label: 'Fontawesome',
-                        link: '/fontawesome'
+                        link: '/documentation/vue/fontawesome'
                     }
                 ]
             },
@@ -36,7 +36,10 @@ export const useStore = defineStore('store', {
                 color: 'text-black',
                 buttonBg: 'hover:bg-yellow-200',
                 subMenus: [
-                    { label: 'Installation', link: '/install'}
+                    {
+                        label: 'Installation',
+                        link: '/documentation/symfony/install'
+                    }
                 ]
             }
         ],
