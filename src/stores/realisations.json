@@ -1,0 +1,94 @@
+[
+  {
+    "title": "Agoractu",
+    "content": "Une application web développée au sein de Digit-Factory. Nous avons utilisés des frameworks JavaScript, VueJS pour le front, ExpressJS pour le back et une base données NoSQL.",
+    "tags": [
+      {
+        "label": "Vue 3",
+        "color": "vue"
+      },
+      {
+        "label": "Tailwind",
+        "color": "tailwind"
+      },
+      {
+        "label": "Express",
+        "color": "express"
+      },
+      {
+        "label": "Firebase",
+        "color": "firebase"
+      },
+      {
+        "label": "NoSQL",
+        "color": "nosql"
+      },
+      {
+        "label": "Figma",
+        "color": "figma"
+      }
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "link": "#"
+      },
+      {
+        "label": "Github",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "title": "Portfolio",
+    "content": "Un portfolio 100% \"bio\". Un site a entièrement été développé en languages natifs (HTML, CSS & Javascript).",
+    "tags": [
+      {
+        "label": "Javascript",
+        "color": "javascript"
+      },
+      {
+        "label": "CSS",
+        "color": "css"
+      },
+      {
+        "label": "HTML",
+        "color": "html"
+      }
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "link": "#"
+      },
+      {
+        "label": "Github",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "title": "Le domaine des Cigales",
+    "content": "Un site conçu avec wordpress et Figma pour le design, dans le cadre d'un appel à projet durant la formation DWWM au sein du Greta d'Arles.",
+    "tags": [
+      {
+        "label": "Wordpress",
+        "color": "wordpress"
+      },
+      {
+        "label": "Javascript",
+        "color": "javascript"
+      },
+      {
+        "label": "Figma",
+        "color": "figma"
+      }
+    ],
+    "links": [
+      {
+        "label": "Website",
+        "link": "https://domaine-des-cigales.com/"
+      }
+    ]
+  }
+]
