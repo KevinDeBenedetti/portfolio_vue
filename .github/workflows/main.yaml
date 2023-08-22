@@ -10,6 +10,18 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
+      - name: Install prismjs
+        run: npm install prismjs
+
+      - name: Install Tailwind
+        run: npm install -D tailwindcss postcss autoprefixer
+
+      - name: Install Tailwind Elements
+        run: npm install tw-elements
+
+      - name: Build
+        run: npm run build
+
       # Deploy to cPanel
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
