@@ -8,11 +8,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        /* Texte */
+        "blue": "rgb(26, 54, 162)",
+        "grayLight": "rgb(148, 148, 149)",
+
         /* Technologies */
-        "bootstrap": "#563D7CFF",
-        "css": "#264DE4FF",
-        "express": "#FFFFFFFF",
-        "figma": "#552D82FF",
+        "bootstrap": "rgb(86, 61, 124)",
+        "css": "rgb(38, 77, 228)",
+        "express": "rgb(255, 255, 255)",
+        "figma": "rgb(85, 45, 130)",
         "firebase": "rgb(255, 153, 51)",
         "html": "rgb(227, 76, 38)",
         "illustrator": "rgb(232, 82, 133)",
@@ -28,7 +32,9 @@ module.exports = {
         "wordpress": "rgb(33, 117, 155)",
 
         /* Backgrounds */
-        "article": "#1B1B1D",
+        "article": "rgb(27, 27, 29)",
+        "main": "#0E0F13FF",
+        "gray": "rgba(32, 32, 34, 0.9)"
       }
     },
   },

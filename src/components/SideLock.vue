@@ -4,6 +4,15 @@ import { useStore } from "@/stores/store";
 const menuStore = useStore();
 const menuItems = menuStore.menuItems;
 
+const handleMouseOver = (event) => {
+  const bar = event.target.querySelector(".bar");
+  bar.style.width = "80px";
+}
+
+const leaveMouseOver = (event) => {
+  const bar = event.target.querySelector(".bar");
+  bar.style.width = "20px";
+}
 </script>
 
 <template>
@@ -14,28 +23,32 @@ const menuItems = menuStore.menuItems;
   </div>
   <nav class="my-4">
     <ul v-for="item in menuItems" :key="item.label" class="hidden lg:flex">
-      <li class="p-2 flex">
-        <span>{{ item.number }}</span>
-        <div>-</div>
-        <RouterLink :to="item.link">
-          <span>{{ item.label }}</span>
+      <li class="p-2 flex" @mouseover="handleMouseOver" @mouseleave="leaveMouseOver">
+        <RouterLink class="flex items-center" :to="item.link">
+          <span>{{ item.number }}</span>
+          <div class="bar mx-[15px] h-[2px] w-[20px] bg-white transition-width duration-300 ease-in-out"></div>
+          <h3>{{ item.label }}</h3>
         </RouterLink>
       </li>
     </ul>
   </nav>
-  <div class="flex">
-    <img src="#" alt="Picture Kevin De Benedetti">
-    <a href="https://www.linkedin.com/in/kevindebenedetti" target="_blank">
-      <font-awesome-icon :icon="['fab', 'linkedin']" />
-      <span>Linkedin</span>
+  <div class="flex items-center">
+    <img class="mr-6" src="images/PhotoCVdetoureeNB.webp" alt="Photo of Kevin De Benedetti">
+    <a class="mr-6" href="https://www.linkedin.com/in/kevindebenedetti" target="_blank">
+      <font-awesome-icon class="text-xl" :icon="['fab', 'linkedin']" />
+      <span class="mx-3">Linkedin</span>
+      <font-awesome-icon class="text-xs" :icon="['fas', 'arrow-up-right-from-square']" />
     </a>
-    <a href="https://github.com/KevinDeBenedetti" target="_blank">
-      <font-awesome-icon :icon="['fab', 'github']" />
-      <span>GitHub</span>
+    <a class="mr-6" href="https://github.com/KevinDeBenedetti" target="_blank">
+      <font-awesome-icon class="text-xl" :icon="['fab', 'github']" />
+      <span class="mx-3">GitHub</span>
+      <font-awesome-icon class="text-xs" :icon="['fas', 'arrow-up-right-from-square']" />
     </a>
   </div>
 </template>
 
 <style scoped>
-
+/*  .bar {
+    transition: width 0.3s ease-in-out;
+  }*/
 </style>
