@@ -1,0 +1,58 @@
+[
+  {
+    "category": "frontend",
+    "technologies": [
+      {
+        "title": "HTML",
+        "doc": "https://developer.mozilla.org/fr/docs/Web/HTML",
+        "icon": "<font-awesome-icon :icon=\"['fab', 'html5']\" />"
+      },
+      {
+        "title": "CSS",
+        "doc": "https://developer.mozilla.org/fr/docs/Web/HTML",
+        "icon": "<font-awesome-icon :icon=\"['fab', 'css3-alt']\" />"
+      },
+      {
+        "title": "JavaScript",
+        "doc": "https://developer.mozilla.org/fr/docs/Web/HTML",
+        "icon": "<font-awesome-icon :icon=\"['fab', 'js']\" />"
+      },
+      {
+        "title": "Vue",
+        "doc": "https://vuejs.org/",
+        "icon": "<font-awesome-icon :icon=\"['fab', 'vuejs']\" />"
+      },
+      {
+        "title": "Tailwind",
+        "doc": "https://tailwindcss.com/",
+        "logo": "./img/logos/tailwind.webp",
+        "whiteLogo": "./img/logos/white-tailwind.webp"
+      },
+      {
+        "title": "Bootstrap",
+        "doc": "https://getbootstrap.com/",
+        "icon": "<font-awesome-icon :icon=\"['fab', 'bootstrap']\" />"
+      },
+      {
+        "title": "Markdown",
+        "doc": "https://www.markdownguide.org/getting-started/",
+        "icon": "<font-awesome-icon :icon=\"['fab', 'markdown']\" />"
+      }
+    ]
+  },
+  {
+    "category": "backend",
+    "technologies": [
+      {
+        "title": "PHP",
+        "doc": "https://www.php.net/manual/fr/intro-whatis.php",
+        "icon": "<font-awesome-icon :icon=\"['fab', 'php']\" />"
+      },
+      {
+        "title": "Node JS",
+        "doc": "https://www.php.net/manual/fr/intro-whatis.php",
+        "icon": "<font-awesome-icon :icon=\"['fab', 'php']\" />"
+      }
+    ]
+  }
+]

@@ -21,6 +21,7 @@ const leaveMouseOver = (event) => {
     <h2 class="text-2xl mt-4">Développeur Web</h2>
     <p class="mt-8 text-justify">Je crée des sites web à la fois performants et esthétiquement attrayants, tout en veillant à leur optimisation pour le référencement naturel (SEO). Passionné par le développement web, j'ai choisi de me réinventer après plusieurs années dans le commerce. En me formant intensivement, j'ai acquis les compétences essentielles en développement front-end, back-end et en design.</p>
   </div>
+
   <nav class="my-4">
     <ul v-for="item in menuItems" :key="item.label" class="hidden lg:flex">
       <li class="p-2 flex" @mouseover="handleMouseOver" @mouseleave="leaveMouseOver">
@@ -33,17 +34,21 @@ const leaveMouseOver = (event) => {
     </ul>
   </nav>
   <div class="flex items-center">
-    <img class="mr-6" src="images/PhotoCVdetoureeNB.webp" alt="Photo of Kevin De Benedetti">
-    <a class="mr-6" href="https://www.linkedin.com/in/kevindebenedetti" target="_blank">
+
+    <img class="mr-6" src="/images/PhotoCVdetoureeNB.webp" alt="Photo of Kevin De Benedetti">
+
+    <a class="mr-6 flex" href="https://www.linkedin.com/in/kevindebenedetti" target="_blank">
       <font-awesome-icon class="text-xl" :icon="['fab', 'linkedin']" />
       <span class="mx-3">Linkedin</span>
       <font-awesome-icon class="text-xs" :icon="['fas', 'arrow-up-right-from-square']" />
     </a>
-    <a class="mr-6" href="https://github.com/KevinDeBenedetti" target="_blank">
+
+    <a class="mr-6 flex" href="https://github.com/KevinDeBenedetti" target="_blank">
       <font-awesome-icon class="text-xl" :icon="['fab', 'github']" />
       <span class="mx-3">GitHub</span>
       <font-awesome-icon class="text-xs" :icon="['fas', 'arrow-up-right-from-square']" />
     </a>
+
   </div>
 </template>
 

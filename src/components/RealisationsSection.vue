@@ -4,9 +4,11 @@ const data = realisationsData;
 </script>
 
 <template>
-  <h3 class="lg:hidden sticky top-0 z-50 w-full bg-blue-400">Réalisations</h3>
+
   <section class="mt-10 px-4">
-<!--    p-8 my-6-->
+
+    <h3 class="section-title">Réalisations</h3>
+<!-- p-8 my-6 -->
     <article
         v-for="item in data" :key="item.title"
         class="transform transition-transform hover:scale-105 bg-article py-2 px-4 my-4 sm:p-6 md:p-10 lg:p-12 xl:p-16 2xl:p-18">
@@ -26,7 +28,7 @@ const data = realisationsData;
       <p class="text-base text-justify mt-6">{{ item.content }}</p>
 <!--Links-->
       <div class="mt-4 flex">
-        <div v-for="link in item.links" class="p-1 mr-2">
+        <div v-for="link in item.links" :key="link.label" class="p-1 mr-2">
           <a class="text-sm" href="">{{ link.label }}</a>
         </div>
       </div>
