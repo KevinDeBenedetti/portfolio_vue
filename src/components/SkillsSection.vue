@@ -1,6 +1,5 @@
 <script setup>
 import skillsData from '@/stores/skills.json';
-import BadgeSkill from "@/components/skills/BadgeSkill.vue";
 
 const skills = skillsData;
 
