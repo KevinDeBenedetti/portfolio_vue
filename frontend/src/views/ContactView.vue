@@ -3,7 +3,7 @@ import ContactForm from "@/components/ContactForm.vue";
 </script>
 
 <template>
-  <main class="h-screen container m-auto">
+  <main class="container m-auto">
 
     <header class="my-10 flex justify-center items-center">
       <RouterLink to="/">
@@ -11,12 +11,12 @@ import ContactForm from "@/components/ContactForm.vue";
       </RouterLink>
     </header>
 
-    <div class="my-10 text-white text-xl font-robotoMono">
+    <div class="px-4 my-10 text-white text-lg md:text-xl font-robotoMono">
       <p>Des idées à concrétiser ? 💡</p>
-      <p>Vous pouvez me contacter avec ce formulaire 👇</p>
+      <p class="mt-2">Vous pouvez me contacter avec ce formulaire 👇</p>
     </div>
 
-    <ContactForm/>
+    <ContactForm />
 
   </main>
 </template>
