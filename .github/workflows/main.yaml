@@ -24,7 +24,10 @@ jobs:
             **/.git*/**
             **/node_modules/**
 
-      - name: Install update
+      - name: Install update backend
+        run: npm update
+
+      - name: Install update frontend
         run: cd frontend/ && npm update
 
       - name: Build
