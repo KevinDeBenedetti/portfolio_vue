@@ -10,17 +10,23 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
-      - name: Install prismjs
-        run: npm install prismjs
+      - name: Install update
+        run: cd frontend/ && npm update
 
-      - name: Install Tailwind
-        run: npm install -D tailwindcss postcss autoprefixer
+#      - name: Install prismjs
+#        run: cd frontend/ && npm install prismjs
 
-      - name: Install Tailwind Elements
-        run: npm install tw-elements
+#      - name: Install Tailwind
+#        run: cd frontend/ npm install -D tailwindcss postcss autoprefixer
+
+#      - name: Install Tailwind Elements
+#        run: cd frontend/ npm install tw-elements
+
+#      - name: Install Axios
+#        run: cd frontend/ npm install axios
 
       - name: Build
-        run: npm run build
+        run: cd frontend/ npm run build
 
       # Deploy to cPanel
       - name: 📂 Sync files
