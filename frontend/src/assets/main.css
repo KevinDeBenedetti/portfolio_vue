@@ -1,0 +1,10 @@
+@import './base.css';
+
+/* External Libs */
+@import 'prismjs/themes/prism-okaidia.css';
+@import 'animate.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+

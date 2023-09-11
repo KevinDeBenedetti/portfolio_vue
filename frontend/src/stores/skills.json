@@ -1,0 +1,129 @@
+[
+  {
+    "category": "frontend",
+    "technologies": [
+      {
+        "title": "HTML",
+        "doc": "https://developer.mozilla.org/fr/docs/Web/HTML",
+        "icon": "fa-brands fa-html5"
+      },
+      {
+        "title": "CSS",
+        "doc": "https://developer.mozilla.org/fr/docs/Web/HTML",
+        "icon": "fa-brands fa-css3-alt"
+      },
+      {
+        "title": "JavaScript",
+        "doc": "https://developer.mozilla.org/fr/docs/Web/HTML",
+        "icon": "fa-brands fa-js"
+      },
+      {
+        "title": "Vue",
+        "doc": "https://vuejs.org/",
+        "icon": "fa-brands fa-vuejs"
+      },
+      {
+        "title": "Tailwind",
+        "doc": "https://tailwindcss.com/",
+        "logo": "/images/logos/tailwind.webp",
+        "whiteLogo": "/images/logos/white-tailwind.webp"
+      },
+      {
+        "title": "Bootstrap",
+        "doc": "https://getbootstrap.com/",
+        "icon": "fa-brands fa-bootstrap"
+      },
+      {
+        "title": "Markdown",
+        "doc": "https://www.markdownguide.org/getting-started/",
+        "icon": "fa-brands fa-markdown"
+      }
+    ]
+  },
+  {
+    "category": "backend",
+    "class": "",
+    "technologies": [
+      {
+        "title": "PHP",
+        "doc": "https://www.php.net/manual/fr/intro-whatis.php",
+        "icon": "fa-brands fa-php"
+      },
+      {
+        "title": "Symfony 6",
+        "doc": "https://symfony.com/",
+        "icon": "fa-brands fa-symfony"
+      },
+      {
+        "title": "Node JS",
+        "doc": "https://www.php.net/manual/fr/intro-whatis.php",
+        "icon": "fa-brands fa-node"
+      },
+      {
+        "title": "Express JS",
+        "doc": "https://symfony.com/",
+        "icon": "fa-brands fa-symfony"
+      }
+    ]
+  },
+  {
+    "category": "CMS",
+    "class": "",
+    "technologies": [
+      {
+        "title": "Wordpress",
+        "doc": "https://developer.wordpress.org/rest-api/key-concepts/",
+        "icon": "fa-brands fa-wordpress"
+      }
+    ]
+  },
+  {
+    "category": "Database",
+    "technologies": [
+      {
+        "title": "MySQL",
+        "doc": "https://docs.oracle.com/en/database/other-databases/nosql-database/index.html",
+        "icon": "fa-solid fa-database"
+      },
+      {
+        "title": "PostgreSQL",
+        "doc": "https://www.postgresql.org/",
+        "icon": "fa-solid fa-database"
+      },
+      {
+        "title": "Firebase",
+        "doc": "https://firebase.google.com/",
+        "logo": "/images/logos/firebase.webp",
+        "whiteLogo": "/images/logos/white-firebase.webp"
+      }
+    ]
+  },
+  {
+    "category": "Design",
+    "technologies": [
+      {
+        "title": "Figma",
+        "doc": "https://www.figma.com/fr/design/",
+        "icon": "fa-brands fa-figma"
+      },
+      {
+        "title": "Photoshop",
+        "doc": "https://www.adobe.com/fr/products/photoshop.html",
+        "logo": "/images/logos/photoshop.webp",
+        "whiteLogo": "./images/logos/white-photoshop.webp"
+      },
+      {
+        "title": "Illustrator",
+        "doc": "https://www.adobe.com/fr/products/illustrator.html",
+        "logo": "./images/logos/illustrator.webp",
+        "whiteLogo": "./images/logos/white-illustrator.webp"
+      },
+      {
+        "title": "InDesign",
+        "doc": "https://www.adobe.com/fr/products/indesign.html",
+        "logo": "./images/logos/indesign.webp",
+        "whiteLogo": "./images/logos/white-indesign.webp"
+      }
+    ]
+  }
+]
