@@ -31,11 +31,13 @@
     "links": [
       {
         "label": "Website",
-        "link": "#"
+        "url": "#",
+        "icon": "fa-solid fa-link"
       },
       {
         "label": "Github",
-        "link": "#"
+        "url": "#",
+        "icon": "fa-brands fa-github"
       }
     ]
   },
@@ -59,11 +61,13 @@
     "links": [
       {
         "label": "Website",
-        "link": "#"
+        "url": "#",
+        "icon": "fa-solid fa-link"
       },
       {
         "label": "Github",
-        "link": "#"
+        "url": "#",
+        "icon": "fa-brands fa-github"
       }
     ]
   },
@@ -87,7 +91,8 @@
     "links": [
       {
         "label": "Website",
-        "link": "https://domaine-des-cigales.com/"
+        "url": "https://domaine-des-cigales.com/",
+        "icon": "fa-solid fa-link"
       }
     ]
   }

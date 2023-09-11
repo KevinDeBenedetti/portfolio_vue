@@ -1,6 +1,6 @@
 <script setup>
 import { useStore } from "@/stores/store";
-import ButtonNav from "@/components/Documentation/ButtonNav.vue";
+import ButtonNav from "@/components/documentation/ButtonNav.vue";
 
 const props = defineProps({
   documentationTitle: String

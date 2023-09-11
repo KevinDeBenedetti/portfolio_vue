@@ -2,11 +2,11 @@
   import vueData from "@/stores/documentation/vue.json";
   import {useRoute} from "vue-router";
   import {onBeforeMount, onMounted, ref, watchEffect} from "vue";
-  import SideNav from "@/components/Documentation/SideNav.vue";
+  import SideNav from "@/components/documentation/SideNav.vue";
   import Prism from 'prismjs';
   import 'prismjs/themes/prism-okaidia.css';
   import {initTE, Sidenav} from "tw-elements";
-  import Content from "@/components/Documentation/Content.vue";
+  import Content from "@/components/documentation/Content.vue";
 
   const currentSubCategory = ref(null);
   const route = useRoute();

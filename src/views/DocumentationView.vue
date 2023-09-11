@@ -1,6 +1,6 @@
 <script setup>
-import SideNav from "@/components/Documentation/SideNav.vue";
-import Content from "@/components/Documentation/Content.vue";
+import SideNav from "@/components/documentation/SideNav.vue";
+import Content from "@/components/documentation/Content.vue";
 </script>
 
 <template>

@@ -46,7 +46,7 @@ import {onMounted} from "vue";
   headerTitle.textContent = currentSection;
 });*/
 
-onMounted(() => {
+/*onMounted(() => {
   const stickyHeader = document.querySelector('#header-title');
 
   const sections = document.querySelectorAll('.section');
@@ -84,28 +84,28 @@ onMounted(() => {
   sections.forEach(section => {
     observer.observe(section);
   });
-})
+})*/
 
 
 </script>
 
 <template>
 
-  <div class="sticky-header">
+<!--  <div class="sticky-header">
 
     <h2 id="header-title">Default title</h2>
 
-  </div>
+  </div>-->
 
   <main class="lg:flex h-screen">
 
-    <aside class="p-12 text-white lg:w-6/12 flex flex-col justify-between">
+    <aside class="p-12 text-white lg:w-4/12 flex flex-col justify-between">
 
       <SideLock/>
 
     </aside>
 
-    <div class="text-white overflow-auto">
+    <div class="text-white overflow-auto lg:w-8/12">
 
       <Realisations class="section"/>
 

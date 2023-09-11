@@ -5,13 +5,13 @@ const data = realisationsData;
 
 <template>
 
-  <section class="mt-10 px-4">
+  <section class="mt-10 px-4" id="realisations">
 
     <h3 class="section-title">Réalisations</h3>
 <!-- p-8 my-6 -->
     <article
         v-for="item in data" :key="item.title"
-        class="transform transition-transform hover:scale-105 bg-article py-2 px-4 my-4 sm:p-6 md:p-10 lg:p-12 xl:p-16 2xl:p-18">
+        class="z-10 border-solid border-grayLight border-2 rounded-2xl transform transition-transform hover:scale-y-105 bg-article hover:bg-white hover:bg-opacity-20 py-2 px-4 my-4 sm:p-6 md:p-10 lg:p-8">
 <!--Tags-->
       <div class="flex flex-wrap">
         <div
@@ -23,18 +23,19 @@ const data = realisationsData;
         </div>
       </div>
 <!--Title-->
-      <h4 class="text-3xl mt-4">{{ item.title }}</h4>
+      <h4 class="text-2xl mt-4 font-robotoMono text-grayLight font-bold">{{ item.title }}</h4>
 <!--Content-->
-      <p class="text-base text-justify mt-6">{{ item.content }}</p>
+      <p class="text-sm text-justify mt-4 font-robotoMono">{{ item.content }}</p>
 <!--Links-->
       <div class="mt-4 flex">
-        <div v-for="link in item.links" :key="link.label" class="p-1 mr-2">
-          <a class="text-sm" href="">{{ link.label }}</a>
-        </div>
+        <a class="p-1 mr-2 text-grayLight hover:text-white" v-for="link in item.links" :key="link.label" :href="link.url">
+          <font-awesome-icon class="mr-2" :icon="link.icon" />
+          <span class="text-sm font-ubuntu ">{{ link.label }}</span>
+        </a>
       </div>
     </article>
 
-    <div>
+<!--    <div>
       <h4>Couleurs</h4>
       <ul class="flex flex-wrap my-3">
         <li class="mx-1 p-2 w-fit border rounded border-gray-500 text-white bg-bootstrap/30">Bootstrap</li>
@@ -48,7 +49,8 @@ const data = realisationsData;
         <li class="mx-1 p-2 w-fit border rounded border-figma text-html bg-html/30">HTML</li>
         <li class="mx-1 p-2 w-fit border rounded border-figma text-css bg-css/30">CSS</li>
       </ul>
-    </div>
+    </div>-->
+
   </section>
 
 </template>

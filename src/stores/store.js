@@ -4,14 +4,14 @@ export const useStore = defineStore('store', {
     state: () => ({
         /* Navigation for main menu*/
         menuItems: [
-            { label: 'Réalisations', number: '01', link: '/realisations'},
-            { label: 'Compétences', number: '02', link: '/skills'},
-            { label: 'Documentation', number: '03', link: '/documentation'}
+            { label: 'Réalisations', number: '01', link: '#realisations'},
+            { label: 'Compétences', number: '02', link: '#skills'},
+            { label: 'documentation', number: '03', link: '#documentation'}
         ],
         /* Navigation for documentation page */
         menuItemsDocumentation: [
             { label: 'Accueil', link: '/' },
-            { label: 'Documentation', link: '/documentation' },
+            { label: 'documentation', link: '/documentation' },
             {
                 label: 'Vue',
                 link: '/documentation/vue',

@@ -35,6 +35,11 @@ module.exports = {
         "article": "rgb(27, 27, 29)",
         "main": "#0E0F13FF",
         "gray": "rgba(32, 32, 34, 0.9)"
+      },
+      fontFamily: {
+        josefinSans: ['Josefin Sans', 'sans-serif'],
+        robotoMono: ['Roboto Mono', 'monospace'],
+        ubuntu: ['Ubuntu', 'sans-serif']
       }
     },
   },
