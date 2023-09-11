@@ -28,7 +28,7 @@ jobs:
         run: cd frontend/ && npm update
 
       - name: Build
-        run: cd frontend/ npm run build
+        run: cd frontend/ && npm run build
 
 #      - name: Install prismjs
 #        run: cd frontend/ && npm install prismjs
