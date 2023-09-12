@@ -10,7 +10,16 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
+      - name: Install update backend
+        run: npm update
+
+      - name: Install update frontend
+        run: cd frontend/ && npm update
+
+      - name: Build
+        run: cd frontend/ && npm run build
       # Deploy to cPanel
+
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -23,15 +32,6 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
-
-      - name: Install update backend
-        run: npm update
-
-      - name: Install update frontend
-        run: cd frontend/ && npm update
-
-      - name: Build
-        run: cd frontend/ && npm run build
 
 #      - name: Install prismjs
 #        run: cd frontend/ && npm install prismjs
