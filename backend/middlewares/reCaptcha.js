@@ -3,10 +3,8 @@ const { response } = require('express');
 require('dotenv').config();
 
 const reCaptchaMiddleware = async (req, res, next) => {
-    const recaptchaToken = req.body.recaptchaToken;
 
-    console.log('recaptchaToken: ' + recaptchaToken);
-    /*    console.log('Secret key: ' + process.env.SECRET_KEY);*/
+    const recaptchaToken = req.body.recaptchaToken;
 
     try {
         const recaptchaResponse = await axios.post(
@@ -22,7 +20,6 @@ const reCaptchaMiddleware = async (req, res, next) => {
 
         const { success, score } = recaptchaResponse.data;
 
-        /*        console.log(recaptchaResponse.data);*/
         console.log('Success: ' + success);
         console.log('Score: ' + score);
 

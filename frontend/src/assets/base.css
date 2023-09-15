@@ -59,6 +59,9 @@
   font-weight: normal;
 }
 
+/* Hide the reCAPTCHA v3 badge on the website */
+.grecaptcha-badge { visibility: hidden; }
+
 /*body {
   min-height: 100vh;
   color: var(--color-text);
