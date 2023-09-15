@@ -12,6 +12,9 @@ const transporter = nodemailer.createTransport({
 });
 
 exports.sendForm = (req, res) => {
+/*    console.log(req.body);*/
+    console.log(req.body.recaptchaToken);
+
     const { firstName, lastName, email, message } = req.body;
 
     // Email configuration

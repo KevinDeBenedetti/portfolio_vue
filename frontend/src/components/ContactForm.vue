@@ -1,7 +1,8 @@
 <script setup>
 
-import {ref} from "vue";
+import { ref } from "vue";
 import axios from "axios";
+import { useRoute } from "vue-router";
 
 const formData = ref({
   firstName: null,
@@ -11,18 +12,52 @@ const formData = ref({
 });
 
 const emailSent = ref(false)
+const route = useRoute();
+
+console.log(route.path);
 
 /* Form submission using Axios */
-async function submitForm() {
+/*async function submitForm(e) {
   try {
+    e.preventDefault();
+    const recaptchaToken = await new Promise((resolve) => {
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LcnthooAAAAAPGu7Kfi2VNtioP7GAlvMx7JZZPK', { action: 'submit' }).then(resolve);
+      })
+    })
 
     const url = 'http://localhost:3000/send-email';
-    const data = formData.value;
+    const data = { ...formData.value, recaptchaToken } ;
 
     axios.post(url, data)
         .then(response => {
           const data = response.data;
-          console.log(data.value);
+
+          emailSent.value = true;
+        })
+        .catch(error => {
+          console.error(error)
+        })
+  } catch (error) {
+    console.error(error);
+  }
+}*/
+
+function submitForm(e) {
+  try {
+    e.preventDefault();
+    const recaptchaToken = new Promise((resolve) => {
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6LcnthooAAAAAPGu7Kfi2VNtioP7GAlvMx7JZZPK', { action: 'submit' }).then(resolve);
+      })
+    })
+
+    const url = 'http://localhost:3000/send-email';
+    const data = { ...formData.value, recaptchaToken } ;
+
+    axios.post(url, data)
+        .then(response => {
+          const data = response.data;
 
           emailSent.value = true;
         })
@@ -33,8 +68,7 @@ async function submitForm() {
     console.error(error);
   }
 }
-
-function closConfirmation() {
+function closeConfirmation() {
   emailSent.value = false;
   // Init form
   formData.value.firstName = null;
@@ -75,7 +109,10 @@ function closConfirmation() {
     </label>
 
     <div class="mt-14 flex justify-center">
-      <button type="submit" class="border-2 border-white h-10 w-40 rounded-full text-xl font-bold hover:bg-white hover:text-gray pointer">
+      <button
+          type="submit"
+          class="border-2 border-white h-10 w-40 rounded-full text-xl font-bold hover:bg-white hover:text-gray pointer"
+      >
         Envoyer
         <font-awesome-icon :icon="['far', 'paper-plane']" />
       </button>
@@ -86,7 +123,7 @@ function closConfirmation() {
   <div v-if="emailSent" class="fixed bottom-10 right-10 w-80 text-white bg-blue p-5 rounded-lg">
     <p class="pt-2">Message envoyé 🚀 Merci pour votre message, je vous répond au plus vite. À bientôt ! 👋</p>
     <div class="absolute top-2 right-2 h-6 w-6 border-2 border-white rounded-full cursor-pointer flex justify-center items-center">
-      <div @click="closConfirmation" class="text-white">x</div>
+      <div @click="closeConfirmation" class="text-white">x</div>
     </div>
   </div>
 
