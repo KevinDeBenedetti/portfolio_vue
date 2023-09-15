@@ -1,10 +1,15 @@
 require('dotenv').config();
 
 const express = require('express');
+const morgan = require('morgan');
+
+// Configuration de Morgan pour enregistrer les logs dans un fichier
+const fs = require('fs');
+const path = require('path');
+const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
 
 const cors = require("cors");
 const bodyParser = require('body-parser');
-const path = require("path");
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -23,6 +28,9 @@ app.use(cors());
 
 // Link frontend
 app.use(express.static(path.join(__dirname, 'frontend/dist')));
+
+// Utilisation de Morgan pour enregistrer les logs d'accès HTTP
+app.use(morgan('combined', { stream: accessLogStream }));
 
 // Endpoint to manage form submission
 app.post('/send-email', reCaptchaMiddleware, formValidation, formController.sendForm);
