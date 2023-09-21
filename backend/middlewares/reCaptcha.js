@@ -4,6 +4,8 @@ require('dotenv').config();
 
 const reCaptchaMiddleware = async (req, res, next) => {
 
+    console.log("reCaptcha middleware");
+
     const recaptchaToken = req.body.recaptchaToken;
 
     try {
