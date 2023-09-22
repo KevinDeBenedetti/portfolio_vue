@@ -61,8 +61,8 @@ app.use(express.static(path.join(__dirname, 'frontend/dist')));
 app.use(morgan('combined', { stream: accessLogStream }));
 
 // Endpoint to manage form submission
-/*app.post('/send-email', reCaptchaMiddleware, formValidation, formController.sendForm);*/
-app.post('/send-email', formValidation, formController.sendForm);
+app.post('/send-email', reCaptchaMiddleware, formValidation, formController.sendForm);
+
 app.listen(port, () => {
     console.log(`Serveur en cours d'exécution sur le port ${port}`);
 })

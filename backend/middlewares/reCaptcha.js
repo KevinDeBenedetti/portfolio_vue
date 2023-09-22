@@ -29,9 +29,11 @@ const reCaptchaMiddleware = async (req, res, next) => {
         logger.info('Score: ' + score);
 
         if (success && score >= 0.5) {
+            logger.info('reCaptcha validé avec succès.');
             res.json({ success: true, message: 'reCaptcha validé avec succès.' });
             next();
         } else {
+            logger.info('Échec de la validation reCaptcha.');
             res.json({ success: false, message: 'Échec de la validation reCaptcha.' });
         }
 
