@@ -10,14 +10,14 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v3
 
-      - name: Install update backend
-        run: npm update
+#      - name: Install update backend
+#        run: npm update
 
-      - name: Install update frontend
-        run: cd frontend/ && npm update
+#      - name: Install update frontend
+#        run: cd frontend/ && npm update
 
-      - name: Build
-        run: cd frontend/ && npm run build
+#      - name: Build
+#        run: cd frontend/ && npm run build
       # Deploy to cPanel
 
       - name: 📂 Sync files
