@@ -1,7 +1,7 @@
 const { body, validationResult } = require('express-validator');
+const logger = require('../../app');
 
 /* Validate inputs in the contact form */
-
 const newForm = [
     body('lastName')
         .isString().notEmpty()
@@ -24,6 +24,7 @@ module.exports = [
     (req, res, next) => {
         const errors = validationResult(req);
         if (!errors.isEmpty()) {
+            logger.error(errors)
             return res.status(422).json({ errors: errors.array() });
         }
         next();

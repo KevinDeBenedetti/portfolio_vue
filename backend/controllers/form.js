@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const logger = require('../../app');
 
 // Nodemailer configuration
 const transporter = nodemailer.createTransport({
@@ -33,12 +34,26 @@ exports.sendForm = (req, res) => {
         `
     }
 
+    // verify connection configuration
+    transporter.verify(function (error, success) {
+        if (error) {
+            logger.error(error);
+            console.log(error);
+        } else {
+            logger.info("Server is ready to take our messages");
+            console.log("Server is ready to take our messages");
+        }
+    });
+
+
     // Send Email
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
+            logger.error(error);
             console.log(error);
             res.status(500).send('Erreur lors de l\'envoi du message.')
         } else {
+            logger.info('Message envoyé : ' + info.response);
             console.log('Message envoyé : ' + info.response);
             res.status(200).send('Message envoyé avec succès.')
         }

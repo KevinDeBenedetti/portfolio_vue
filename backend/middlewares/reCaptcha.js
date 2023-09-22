@@ -1,10 +1,11 @@
 const axios = require('axios');
 const { response } = require('express');
+const logger = require('../../app');
 require('dotenv').config();
 
 const reCaptchaMiddleware = async (req, res, next) => {
 
-    console.log("reCaptcha middleware");
+    logger.info("reCaptcha, log test");
 
     const recaptchaToken = req.body.recaptchaToken;
 
@@ -23,7 +24,9 @@ const reCaptchaMiddleware = async (req, res, next) => {
         const { success, score } = recaptchaResponse.data;
 
         console.log('Success: ' + success);
+        logger.info('Success: ' + success);
         console.log('Score: ' + score);
+        logger.info('Score: ' + score);
 
         if (success && score >= 0.5) {
             res.json({ success: true, message: 'reCaptcha validé avec succès.' });
@@ -34,6 +37,9 @@ const reCaptchaMiddleware = async (req, res, next) => {
 
     } catch (error) {
         console.error('Erreur lors de la vérification de reCaptcha :', error);
+
+        logger.error('Erreur lors de la vérification de reCaptcha :', error);
+
         res.status(500).json({ success: false, message: 'Erreur serveur.' });
     }
 }
