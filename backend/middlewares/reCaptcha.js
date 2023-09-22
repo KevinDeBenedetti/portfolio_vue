@@ -22,7 +22,7 @@ const reCaptchaMiddleware = async (req, res, next) => {
         );
 
         const { success, score } = recaptchaResponse.data;
-
+        logger.info(recaptchaResponse.data);
         console.log('Success: ' + success);
         logger.info('Success: ' + success);
         console.log('Score: ' + score);
