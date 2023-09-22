@@ -21,7 +21,7 @@ async function submitForm(e) {
 
     /* Show the badge when form is submit */
     const badge = document.querySelector('.grecaptcha-badge');
-    console.log(badge);
+/*    console.log(badge);*/
     badge.style.visibility = 'visible';
 
     const recaptchaToken = await new Promise((resolve) => {
