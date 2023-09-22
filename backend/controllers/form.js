@@ -50,6 +50,7 @@ exports.sendForm = (req, res) => {
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
             logger.error(error);
+
             console.log(error);
             res.status(500).send('Erreur lors de l\'envoi du message.')
         } else {

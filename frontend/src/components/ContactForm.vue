@@ -57,7 +57,7 @@ function closeConfirmation() {
   formData.value.message = null;
   // Hide form when popup is closed
   const badge = document.querySelector('.grecaptcha-badge');
-  console.log(badge);
+/*  console.log(badge);*/
   badge.style.visibility = 'hidden';
 }
 
