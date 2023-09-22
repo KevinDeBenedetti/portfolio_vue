@@ -5,8 +5,6 @@ require('dotenv').config();
 
 const reCaptchaMiddleware = async (req, res, next) => {
 
-    logger.info("reCaptcha, log test");
-
     const recaptchaToken = req.body.recaptchaToken;
 
     try {
@@ -22,11 +20,12 @@ const reCaptchaMiddleware = async (req, res, next) => {
         );
 
         const { success, score } = recaptchaResponse.data;
-        logger.info(recaptchaResponse.data);
-        console.log('Success: ' + success);
-        logger.info('Success: ' + success);
-        console.log('Score: ' + score);
-        logger.info('Score: ' + score);
+        const response = JSON.stringify(recaptchaResponse.data, null, 2);
+
+        logger.info('Response' + response);
+
+/*        logger.info('Success: ' + success);
+        logger.info('Score: ' + score);*/
 
         if (success && score >= 0.5) {
             logger.info('reCaptcha validé avec succès.');

@@ -30,8 +30,8 @@ async function submitForm(e) {
       })
     })
 
-/*    const url = 'http://localhost:3000/send-email';*/
-    const url = 'https://portfolio.kevindb.dev/send-email';
+    const url = 'http://localhost:3000/send-email';
+/*    const url = 'https://portfolio.kevindb.dev/send-email';*/
     const data = { ...formData.value, recaptchaToken } ;
 
     axios.post(url, data)
