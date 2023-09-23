@@ -1,7 +1,8 @@
-const axios = require('axios');
-const { response } = require('express');
-const logger = require('../../app');
 require('dotenv').config();
+
+const axios = require('axios');
+
+const logger = require('../winstonConfig');
 
 const reCaptchaMiddleware = async (req, res, next) => {
 

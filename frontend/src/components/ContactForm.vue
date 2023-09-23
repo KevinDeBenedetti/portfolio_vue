@@ -30,7 +30,7 @@ async function submitForm(e) {
       })
     })
 
-    const url = 'http://localhost:3000/send-email';
+    const url = 'http://localhost:3000/api/send-email';
 /*    const url = 'https://portfolio.kevindb.dev/send-email';*/
     const data = { ...formData.value, recaptchaToken } ;
 
@@ -65,7 +65,7 @@ function closeConfirmation() {
 
 <template>
 <!--  <form id="contact-form" @submit.prevent="submitForm" class="mb-40 p-8 md:p-12 sm:border-2 border-white rounded-2xl flex flex-col justify-between text-white font-ubuntu">-->
-  <form @submit="submitForm" class="mb-40 p-8 md:p-12 sm:border-2 border-white rounded-2xl flex flex-col justify-between text-white font-ubuntu">
+  <form @submit="submitForm" class="p-8 md:p-12 sm:border-2 border-white rounded-2xl flex flex-col justify-between text-white font-ubuntu">
 
     <div class="lg:flex lg:justify-between">
 
@@ -105,7 +105,7 @@ function closeConfirmation() {
   </form>
 
   <div v-if="emailSent" class="fixed bottom-10 left-10 w-80 text-white bg-blue p-5 rounded-lg">
-    <p class="pt-2">Message envoyé 🚀 Merci pour votre message, je vous répond au plus vite. À bientôt ! 👋</p>
+    <p class="pt-2">Message envoyé 🚀 Merci, je vous répond au plus vite. À bientôt ! 👋</p>
     <div class="absolute top-2 right-2 h-6 w-6 border-2 border-white rounded-full cursor-pointer flex justify-center items-center">
       <div @click="closeConfirmation" class="text-white">x</div>
     </div>

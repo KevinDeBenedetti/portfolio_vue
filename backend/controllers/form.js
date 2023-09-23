@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const logger = require('../../app');
+const logger = require('../winstonConfig');
 
 // Nodemailer configuration
 const transporter = nodemailer.createTransport({

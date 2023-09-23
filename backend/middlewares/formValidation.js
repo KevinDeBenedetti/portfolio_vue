@@ -1,5 +1,5 @@
 const { body, validationResult } = require('express-validator');
-const logger = require('../../app');
+const logger = require('../winstonConfig');
 
 /* Validate inputs in the contact form */
 const newForm = [
