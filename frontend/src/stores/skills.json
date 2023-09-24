@@ -83,7 +83,8 @@
       {
         "title": "MySQL",
         "doc": "https://docs.oracle.com/en/database/other-databases/nosql-database/index.html",
-        "icon": "fa-solid fa-database"
+        "logo": "/images/logos/mysql.webp",
+        "whiteLogo": "/images/logos/white-mysql.webp"
       },
       {
         "title": "PostgreSQL",
