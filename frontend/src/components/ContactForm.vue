@@ -2,7 +2,6 @@
 
 import {ref} from "vue";
 import axios from "axios";
-import { useRoute } from "vue-router";
 
 const formData = ref({
   firstName: null,
@@ -12,7 +11,6 @@ const formData = ref({
 });
 
 const emailSent = ref(false)
-const route = useRoute();
 
 /* Form submission using Axios */
 async function submitForm(e) {
@@ -30,8 +28,18 @@ async function submitForm(e) {
       })
     })
 
-    const url = 'http://localhost:3000/api/send-email';
-/*    const url = 'https://portfolio.kevindb.dev/send-email';*/
+    let url;
+
+    console.log(import.meta.env.NODE_ENV);
+
+    if (import.meta.env.VITE_NODE_ENV === 'production') {
+      url = 'https://portfolio.kevindb.dev/api/send-email';
+    } else {
+      url = 'http://localhost:3000/api/send-email';
+    }
+
+    console.log(url);
+
     const data = { ...formData.value, recaptchaToken } ;
 
     axios.post(url, data)

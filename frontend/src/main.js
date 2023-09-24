@@ -19,6 +19,12 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faHouse, faArrowUpRightFromSquare, faDatabase, faLink } from '@fortawesome/free-solid-svg-icons'
 import { faVuejs, faSymfony, faLinkedinIn, faGithub, faHtml5, faCss3Alt, faJs, faBootstrap, faMarkdown, faPhp, faNode, faWordpress, faFigma } from '@fortawesome/free-brands-svg-icons'
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+
+/* Import dotenv */
+/*import dotenv from "dotenv";
+
+dotenv.config();*/
+
 /* add icons to the library */
 library.add( faHouse, faVuejs, faSymfony, faLinkedinIn, faGithub, faArrowUpRightFromSquare, faHtml5, faCss3Alt, faJs, faBootstrap, faMarkdown, faPhp, faNode, faWordpress, faDatabase, faFigma, faLink, faPaperPlane )
 
