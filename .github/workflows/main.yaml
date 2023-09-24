@@ -6,18 +6,25 @@ jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
+
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-#      - name: Install update backend
-#        run: npm update
+      - name: 🪢 Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
 
-#      - name: Install update frontend
-#        run: cd frontend/ && npm update
+      - name: Install update backend
+        run: npm update
 
-#      - name: Build
-#        run: cd frontend/ && npm run build
+      - name: Install update frontend
+        run: cd frontend/ && npm update
+
+      - name: Build
+        run: cd frontend/ && npm run build
+
       # Deploy to cPanel
 
       - name: 📂 Sync files

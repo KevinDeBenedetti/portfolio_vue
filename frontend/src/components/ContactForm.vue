@@ -1,7 +1,9 @@
 <script setup>
 
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 import axios from "axios";
+
+const apiUrl = ref("");
 
 const formData = ref({
   firstName: null,
@@ -28,19 +30,7 @@ async function submitForm(e) {
       })
     })
 
-    let url;
-
-    console.log(import.meta.env.VITE_NODE_ENV);
-
-/*    if (import.meta.env.VITE_NODE_ENV === 'production') {
-      url = 'https://portfolio.kevindb.dev/api/send-email';
-    } else {
-      url = 'http://localhost:3000/api/send-email';
-    }*/
-
-    url = 'https://portfolio.kevindb.dev/api/send-email';
-
-    console.log(url);
+    const url = apiUrl.value + '/api/send-email';
 
     const data = { ...formData.value, recaptchaToken } ;
 
@@ -70,6 +60,18 @@ function closeConfirmation() {
 /*  console.log(badge);*/
   badge.style.visibility = 'hidden';
 }
+
+onMounted(async () => {
+  try {
+    const response = await axios.get("/api/environment");
+
+    apiUrl.value = response.data.apiUrl;
+
+    console.log(apiUrl.value);
+  } catch (error) {
+    console.error("Erreur de la récupération de apiUrl:", error);
+  }
+})
 
 </script>
 

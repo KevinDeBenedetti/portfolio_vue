@@ -11,6 +11,8 @@ const bodyParser = require('body-parser');
 
 const path = require("path");
 const app = express();
+const logger = require("./backend/winstonConfig");
+
 const port = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -30,6 +32,14 @@ app.use(morgan(morganConfig.morganFormat, { stream: morganConfig.accessLogStream
 
 // Endpoint to manage form submission
 app.use('/api', formRoutes);
+
+// Verify environment
+const apiUrl = process.env.NODE_ENV === 'production'
+    ? 'https://portfolio.kevindb.dev'
+    : 'http://localhost:3000';
+app.get('/api/environment', (req, res) => {
+    res.json({ apiUrl });
+})
 
 app.listen(port, () => {
     console.log(`Serveur en cours d'exécution sur le port ${port}`);
