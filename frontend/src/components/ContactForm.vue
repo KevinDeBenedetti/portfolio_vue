@@ -30,14 +30,14 @@ async function submitForm(e) {
 
     let url;
 
-    console.log(import.meta.env.NODE_ENV);
+    console.log(import.meta.env.VITE_NODE_ENV);
 
 /*    if (import.meta.env.VITE_NODE_ENV === 'production') {
       url = 'https://portfolio.kevindb.dev/api/send-email';
     } else {
       url = 'http://localhost:3000/api/send-email';
     }*/
-    
+
     url = 'https://portfolio.kevindb.dev/api/send-email';
 
     console.log(url);
