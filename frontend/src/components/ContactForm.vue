@@ -37,7 +37,6 @@ async function submitForm(e) {
     axios.post(url, data)
         .then(response => {
           const data = response.data;
-
           emailSent.value = true;
         })
         .catch(error => {
@@ -57,17 +56,13 @@ function closeConfirmation() {
   formData.value.message = null;
   // Hide form when popup is closed
   const badge = document.querySelector('.grecaptcha-badge');
-/*  console.log(badge);*/
   badge.style.visibility = 'hidden';
 }
 
 onMounted(async () => {
   try {
     const response = await axios.get("/api/environment");
-
     apiUrl.value = response.data.apiUrl;
-
-    console.log(apiUrl.value);
   } catch (error) {
     console.error("Erreur de la récupération de apiUrl:", error);
   }
