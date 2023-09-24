@@ -11,6 +11,7 @@ module.exports = {
         /* Texte */
         "blue": "rgb(26, 54, 162)",
         "grayLight": "rgb(148, 148, 149)",
+        "greenPantone": "#b5dba9",
 
         /* Technologies */
         "bootstrap": "rgb(86, 61, 124)",

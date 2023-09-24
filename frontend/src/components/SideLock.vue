@@ -42,7 +42,7 @@ function scrollToSection(target) {
     </ul>
   </nav>
 
-  <div class="my-4 flex items-center justify-center">
+  <div class="my-4 flex items-center justify-center hover:scale-125 transition-transform duration-500">
     <RouterLink to="/contact">
       <button class="border-2 border-white h-20 w-60 rounded-full font-ubuntu text-2xl font-bold hover:bg-white hover:text-gray pointer">
         Me contacter
@@ -50,27 +50,25 @@ function scrollToSection(target) {
     </RouterLink>
   </div>
 
-  <div class="flex items-center">
+  <div class="flex items-center mt-4">
 
     <img class="mr-8" src="/images/PhotoCVdetoureeNB.webp" alt="Photo of Kevin De Benedetti">
 
     <div class="flex flex-wrap">
 
-      <a class="p-2 mr-6 flex items-center" href="https://www.linkedin.com/in/kevindebenedetti" target="_blank">
+      <a class="p-2 mr-6 flex items-center hover:scale-110 transition-transform duration-500" href="https://www.linkedin.com/in/kevindebenedetti" target="_blank">
         <font-awesome-icon class="text-lg" :icon="['fab', 'linkedin-in']" />
         <span class="ml-3 font-ubuntu text-sm">Linkedin</span>
         <font-awesome-icon class="ml-2 text-xs" :icon="['fas', 'arrow-up-right-from-square']" />
       </a>
 
-      <a class="p-2 flex items-center" href="https://github.com/KevinDeBenedetti" target="_blank">
+      <a class="p-2 flex items-center hover:scale-110 transition-transform duration-500" href="https://github.com/KevinDeBenedetti" target="_blank">
         <font-awesome-icon class="text-lg" :icon="['fab', 'github']" />
         <span class="ml-3 font-ubuntu text-sm">GitHub</span>
         <font-awesome-icon class="ml-2 text-xs" :icon="['fas', 'arrow-up-right-from-square']" />
       </a>
 
     </div>
-
-
 
   </div>
 </template>

@@ -61,12 +61,12 @@
     "links": [
       {
         "label": "Website",
-        "url": "#",
+        "url": "https://kevindebenedetti.github.io/portfolio/",
         "icon": "fa-solid fa-link"
       },
       {
         "label": "Github",
-        "url": "#",
+        "url": "https://github.com/KevinDeBenedetti/portfolio",
         "icon": "fa-brands fa-github"
       }
     ]

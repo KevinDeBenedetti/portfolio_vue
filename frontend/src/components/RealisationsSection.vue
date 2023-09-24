@@ -7,16 +7,16 @@ const data = realisationsData;
 
   <section class="mt-10 px-4" id="realisations">
 
-    <h3 class="section-title">Réalisations</h3>
-<!-- p-8 my-6 -->
+    <h3 class="hidden">Réalisations</h3>
+
     <article
         v-for="item in data" :key="item.title"
-        class="z-10 border-solid border-grayLight border-2 rounded-2xl transform transition-transform hover:scale-y-105 bg-article hover:bg-white hover:bg-opacity-20 py-2 px-4 my-4 sm:p-6 md:p-10 lg:p-8">
+        class="z-10 border-solid border-grayLight border-2 rounded-2xl  bg-article hover:bg-white hover:bg-opacity-20 py-2 px-4 my-4 sm:p-6 md:p-10 lg:p-8">
 <!--Tags-->
       <div class="flex flex-wrap">
         <div
             v-for="tag in item.tags" :key="tag.label"
-            class="m-1 px-2 py-1 border rounded border-gray-500"
+            class="m-1 px-1 py-0 border rounded border-gray-500"
             :class="' bg-' + tag.color + '/30' "
         >
           <span class="text-xs text-gray-300 uppercase">{{ tag.label }}</span>
@@ -28,7 +28,7 @@ const data = realisationsData;
       <p class="text-sm text-justify mt-4 font-robotoMono">{{ item.content }}</p>
 <!--Links-->
       <div class="mt-4 flex">
-        <a class="p-1 mr-2 text-grayLight hover:text-white" v-for="link in item.links" :key="link.label" :href="link.url">
+        <a class="p-1 mr-2 text-grayLight hover:text-white hover:scale-110 transition-transform duration-300" v-for="link in item.links" :key="link.label" :href="link.url" target="_blank">
           <font-awesome-icon class="mr-2" :icon="link.icon" />
           <span class="text-sm font-ubuntu ">{{ link.label }}</span>
         </a>
