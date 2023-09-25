@@ -1,12 +1,10 @@
 require('dotenv').config();
 
 const express = require('express');
-const morgan = require('morgan');
 const history = require('connect-history-api-fallback');
 const cors = require("cors");
 
 const formRoutes = require('./backend/routes/formRoutes');
-const morganConfig = require("./backend/morganConfig");
 const bodyParser = require('body-parser');
 
 const path = require("path");
@@ -26,9 +24,6 @@ app.use(history());
 
 // Link frontend
 app.use(express.static(path.join(__dirname, 'frontend/dist')));
-
-// Utilisation de Morgan pour enregistrer les logs d'accès HTTP
-app.use(morgan(morganConfig.morganFormat, { stream: morganConfig.accessLogStream }));
 
 // Endpoint to manage form submission
 app.use('/api', formRoutes);

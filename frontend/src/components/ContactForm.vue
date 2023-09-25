@@ -77,24 +77,24 @@ onMounted(async () => {
     <div class="sm:flex md:justify-between">
 
       <div class="flex flex-col sm:w-1/2 sm:mr-10">
-        <label for="lastname">Votre nom</label>
+        <label for="lastname">Nom</label>
         <input v-model="formData.lastName" id="lastname" class="mt-2 px-4 py-2 text-white bg-transparent border-2 border-white rounded-lg" type="text" required>
       </div>
 
       <div class="mt-4 sm:mt-0 flex flex-col sm:w-1/2">
-        <label for="firstname">Votre prénom</label>
+        <label for="firstname">Prénom</label>
         <input v-model="formData.firstName" id="firstname" class="mt-2 px-4 py-2 text-white bg-transparent border-2 border-white rounded-lg" type="text">
       </div>
 
     </div>
 
     <label for="email" class="mt-4 flex flex-col">
-      <span>Votre email</span>
+      <span>Email</span>
       <input v-model="formData.email" id="email" class="mt-2 px-4 py-2 text-white bg-transparent border-2 border-white rounded-lg md:w-4/6" type="email">
     </label>
 
     <label for="message" class="mt-4 flex flex-col">
-      <span>Votre message</span>
+      <span>Message</span>
 <!--      <input v-model="formData.message" id="message" class="mt-2 px-4 py-2 text-white bg-transparent border-2 border-white rounded-lg" type="text">-->
       <textarea v-model="formData.message" id="message" class="mt-4 px-4 py-2 text-white bg-transparent border-2 border-white rounded-lg" type="text" rows="6"></textarea>
     </label>

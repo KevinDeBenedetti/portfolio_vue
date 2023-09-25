@@ -1,7 +1,4 @@
-require('dotenv').config();
-
 const axios = require('axios');
-
 const logger = require('../winstonConfig');
 
 const reCaptchaMiddleware = async (req, res, next) => {

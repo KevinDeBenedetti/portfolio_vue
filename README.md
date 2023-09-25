@@ -1,14 +1,55 @@
-# portfolio_vue
+# Portfolio_vue
 
-This template should help get you started developing with Vue 3 in Vite.
+My portfolio developed with Vue V3 & Express.
 
-## Recommended IDE Setup
+## Frontend
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+### Dependencies
 
-## Customize configuration
+```sh
+npm i axios
+```
+```sh
+npm i prismjs
+```
+```sh
+npm i tailwindcss
+```
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Backend
+
+### Dependencies
+
+```sh
+npm i axios
+```
+```sh
+npm i body-parser
+```
+```sh
+npm i connect-history-api-fallback
+```
+```sh
+npm i cors
+```
+```sh
+npm i dotenv
+```
+```sh
+npm i express
+```
+```sh
+npm i express-validator
+```
+```sh
+npm i nodemailer
+```
+```sh
+npm i path
+```
+```sh
+npm i winston
+```
 
 ## Project Setup
 

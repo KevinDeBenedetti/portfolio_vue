@@ -24,6 +24,7 @@ function scrollToSection(target) {
 </script>
 
 <template>
+
   <div>
     <h1 class="text-4xl font-josefinSans">Kevin <br> De Benedetti</h1>
     <h2 class="text-xl mt-2 font-robotoMono font-bold text-grayLight">Développeur Web</h2>
@@ -52,7 +53,7 @@ function scrollToSection(target) {
 
   <div class="flex items-center mt-4">
 
-    <img class="mr-8" src="/images/PhotoCVdetoureeNB.webp" alt="Photo of Kevin De Benedetti">
+    <img class="mr-8" width="90" height="68" src="/images/PhotoCVdetoureeNB.png" alt="Photo of Kevin De Benedetti">
 
     <div class="flex flex-wrap">
 
@@ -71,6 +72,7 @@ function scrollToSection(target) {
     </div>
 
   </div>
+
 </template>
 
 <style scoped>

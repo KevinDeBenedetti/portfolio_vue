@@ -1,9 +1,0 @@
-// Configuration de Morgan pour enregistrer les logs dans un fichier
-const fs = require('fs');
-const path = require('path');
-const accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), { flags: 'a' });
-
-module.exports = {
-    accessLogStream,
-    morganFormat: 'combined',
-};
