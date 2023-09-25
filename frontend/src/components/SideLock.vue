@@ -53,7 +53,7 @@ function scrollToSection(target) {
 
   <div class="flex items-center mt-4">
 
-    <img class="mr-8" width="90" height="68" src="/images/PhotoCVdetoureeNB.png" alt="Photo of Kevin De Benedetti">
+    <img class="mr-8" width="90" height="90" src="/images/photo_90x90.webp" alt="Photo of Kevin De Benedetti">
 
     <div class="flex flex-wrap">
 

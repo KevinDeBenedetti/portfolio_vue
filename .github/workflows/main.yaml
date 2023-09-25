@@ -26,7 +26,6 @@ jobs:
         run: cd frontend/ && npm run build
 
       # Deploy to cPanel
-
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
@@ -39,15 +38,3 @@ jobs:
             **/.git*
             **/.git*/**
             **/node_modules/**
-
-#      - name: Install prismjs
-#        run: cd frontend/ && npm install prismjs
-
-#      - name: Install Tailwind
-#        run: cd frontend/ npm install -D tailwindcss postcss autoprefixer
-
-#      - name: Install Tailwind Elements
-#        run: cd frontend/ npm install tw-elements
-
-#      - name: Install Axios
-#        run: cd frontend/ npm install axios
