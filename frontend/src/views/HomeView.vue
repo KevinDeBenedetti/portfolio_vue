@@ -7,7 +7,7 @@ import Skills from "@/components/SkillsSection.vue";
 
 <template>
 
-  <main class="lg:flex h-screen">
+  <main class="lg:flex h-screen lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl m-auto">
 
     <aside class="p-12 text-white lg:w-4/12 flex flex-col justify-around">
 
