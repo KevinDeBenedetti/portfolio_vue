@@ -30,8 +30,10 @@ app.use('/api', formRoutes);
 
 // Verify environment
 const apiUrl = process.env.NODE_ENV === 'production'
-    ? 'https://portfolio.kevindb.dev'
+    ? 'https://kevindb.dev'
     : 'http://localhost:3000';
+
+// Send the URL to the frontend
 app.get('/api/environment', (req, res) => {
     res.json({ apiUrl });
 })
