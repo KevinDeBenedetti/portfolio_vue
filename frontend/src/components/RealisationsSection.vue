@@ -5,13 +5,13 @@ const data = realisationsData;
 
 <template>
 
-  <section class="mt-10 px-4" id="realisations">
+  <section class="py-20 px-4" id="realisations">
 
     <h3 class="hidden">Réalisations</h3>
 
     <article
         v-for="item in data" :key="item.title"
-        class="z-10 border-solid border-grayLight border-2 rounded-2xl  bg-article hover:bg-white hover:bg-opacity-20 py-2 px-4 my-4 sm:p-6 md:p-10 lg:p-8">
+        class="z-10 border-solid border-grayLight border-2 rounded-2xl bg-article hover:bg-white hover:bg-opacity-20 py-2 px-4 my-4 sm:p-6 md:p-10 lg:p-8">
 <!--Tags-->
       <div class="flex flex-wrap">
         <div

@@ -2,6 +2,7 @@
 import SideLock from "@/components/SideLock.vue";
 import Realisations from "@/components/RealisationsSection.vue";
 import Skills from "@/components/SkillsSection.vue";
+import Challenges from "@/components/ChallengesSection.vue";
 
 </script>
 
@@ -20,6 +21,8 @@ import Skills from "@/components/SkillsSection.vue";
       <Realisations />
 
       <Skills />
+
+      <Challenges />
 
     </div>
 

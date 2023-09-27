@@ -7,14 +7,14 @@ const skills = skillsData;
 
 <template>
 
-  <section class="mt-10 px-4" id="skills">
+  <section class="py-20 px-4" id="skills">
 
     <h3 class="hidden">Compétences</h3>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
 
 <!-- FRONTEND article -->
-      <article v-for="skill in skills" :key="skill.category" class="mt-10">
+      <article class="mt-6" v-for="skill in skills" :key="skill.category">
 
 <!--        <div v-if="skill.category === 'frontend'" class="flex flex-col justify-end items-center">-->
         <div class="flex justify-center items-center">

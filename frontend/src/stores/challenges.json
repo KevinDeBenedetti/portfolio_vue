@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Product preview card component main",
+    "challenge": "frontendmentor.io",
+    "tags": [
+      {
+        "label": "HTML",
+        "color": "html"
+      },
+      {
+        "label": "Tailwind",
+        "color": "tailwind"
+      }
+    ],
+    "preview": "/images/challenges/Product_preview_card_component_main_desktop-design.jpg",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://kevindebenedetti.github.io/Product_preview_card_component_main/",
+        "icon": "fa-solid fa-link"
+      },
+      {
+        "label": "Github",
+        "url": "https://github.com/KevinDeBenedetti/Product_preview_card_component_main",
+        "icon": "fa-brands fa-github"
+      }
+    ]
+  },
+  {
+    "title": "QR code component",
+    "challenge": "frontendmentor.io",
+    "tags": [
+      {
+        "label": "HTML",
+        "color": "html"
+      },
+      {
+        "label": "Tailwind",
+        "color": "tailwind"
+      }
+    ],
+    "preview": "/images/challenges/QR_code_component_desktop-design.png",
+    "links": [
+      {
+        "label": "Website",
+        "url": "https://kevindebenedetti.github.io/QR_code_component/",
+        "icon": "fa-solid fa-link"
+      },
+      {
+        "label": "Github",
+        "url": "https://github.com/KevinDeBenedetti/QR_code_component",
+        "icon": "fa-brands fa-github"
+      }
+    ]
+  }
+]

@@ -12,7 +12,7 @@ import ContactForm from "@/components/ContactForm.vue";
       </RouterLink>
     </header>
 
-    <div class="text-white font-robotoMono px-4 sm:px-0 mt-10">
+    <div class="text-white font-robotoMono px-4 sm:px-0 mt-20">
       <p>Des idées à concrétiser ? 💡</p>
       <p class="mt-2">Vous pouvez me contacter avec ce formulaire 👇</p>
     </div>

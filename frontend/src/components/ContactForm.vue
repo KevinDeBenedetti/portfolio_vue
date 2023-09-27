@@ -72,7 +72,7 @@ onMounted(async () => {
 
 <template>
 
-  <form @submit="submitForm" class="pt-6 px-4 sm:p-10 sm:mt-8 sm:border-2 border-white rounded-2xl flex flex-col justify-around text-white font-ubuntu text-sm">
+  <form @submit="submitForm" class="mt-10 px-4 sm:p-10 sm:mt-20 sm:border-2 border-white rounded-2xl flex flex-col justify-around text-white font-ubuntu text-sm">
 
     <div class="sm:flex md:justify-between">
 
@@ -99,7 +99,7 @@ onMounted(async () => {
       <textarea v-model="formData.message" id="message" class="mt-4 px-4 py-2 text-white bg-transparent border-2 border-white rounded-lg" type="text" rows="6"></textarea>
     </label>
 
-    <div class="flex justify-center pt-4">
+    <div class="flex justify-center pt-10">
       <button
           type="submit"
           class="border-2 border-white h-10 w-40 rounded-full text-xl font-bold hover:bg-white hover:text-gray pointer"

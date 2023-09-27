@@ -6,8 +6,8 @@ export const useStore = defineStore('store', {
         menuItems: [
             { label: 'Réalisations', number: '01', link: '#realisations'},
             { label: 'Compétences', number: '02', link: '#skills'},
-/*            { label: 'Challenges', number: '03', link: '#challenges'},
-            { label: 'documentation', number: '04', link: '#documentation'}*/
+            { label: 'Challenges', number: '03', link: '#challenges'},
+ /*           { label: 'documentation', number: '04', link: '#documentation'}*/
         ],
         /* Navigation for documentation page */
         menuItemsDocumentation: [
