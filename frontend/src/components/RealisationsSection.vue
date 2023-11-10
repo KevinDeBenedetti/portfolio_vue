@@ -16,16 +16,16 @@ const data = realisationsData;
       <div class="flex flex-wrap">
         <div
             v-for="tag in item.tags" :key="tag.label"
-            class="m-1 px-1 py-0 border rounded border-gray-500"
+            class="m-1 px-2 py-1 border rounded border-gray-500"
             :class="' bg-' + tag.color + '/30' "
         >
-          <span class="text-xs text-gray-300 uppercase">{{ tag.label }}</span>
+          <span class="text-sm text-gray-300 uppercase">{{ tag.label }}</span>
         </div>
       </div>
 <!--Title-->
       <h4 class="text-2xl mt-4 font-robotoMono text-grayLight font-bold">{{ item.title }}</h4>
 <!--Content-->
-      <p class="text-sm text-justify mt-4 font-robotoMono">{{ item.content }}</p>
+      <p class="text-base lg:text-justify mt-4 font-robotoMono">{{ item.content }}</p>
 <!--Links-->
       <div class="mt-4 flex">
         <a class="p-1 mr-2 text-grayLight hover:text-white hover:scale-110 transition-transform duration-300" v-for="link in item.links" :key="link.label" :href="link.url" target="_blank">

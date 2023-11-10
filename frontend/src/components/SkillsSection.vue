@@ -26,11 +26,11 @@ const skills = skillsData;
         <div class="mt-6 flex flex-wrap justify-center gap-3">
           <a class="text-grayLight flex justify-center items-center flex-col" v-for="technologie in skill.technologies" :key="technologie.title" :href="technologie.doc">
 
-            <div class="border-2 h-[80px] w-[80px] rounded-xl flex flex-col items-center justify-center">
+            <div class="p-2 border-2 min-h-[100px] min-w-[100px] rounded-xl flex flex-col items-center justify-center">
               <font-awesome-icon v-if="technologie.icon" class="text-white text-3xl" :icon="technologie.icon" />
               <img v-else-if="technologie.whiteLogo" :src="technologie.whiteLogo" :alt="'Logo' + technologie.title">
               <p v-else>NO LOGO</p>
-              <h5 class="text-xs mt-2">{{ technologie.title }}</h5>
+              <h5 class="text-sm mt-2">{{ technologie.title }}</h5>
             </div>
 
           </a>

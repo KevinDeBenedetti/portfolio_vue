@@ -24,9 +24,11 @@ const data = challengesData;
       </div>
 
       <!--Title-->
-      <h4 class="text-sm font-robotoMono text-white font-bold text-center">{{ item.challenge }}</h4>
+      <h3 class="text-sm font-robotoMono text-white font-bold text-center">{{ item.challenge }}</h3>
 
       <img
+          height="800"
+          width="1440"
           :src="item.preview"
           alt="">
 

@@ -31,19 +31,19 @@ function scrollToSection(target) {
     <p class="mt-6 font-robotoMono text-sm font-extralight leading-6 tracking-tight text-justify">Je crée des sites web à la fois performants et esthétiquement attrayants, tout en veillant à leur optimisation pour le référencement naturel (SEO).</p>
   </div>
 
-  <nav class="my-4">
+  <nav class="lg:my-4">
     <ul v-for="item in menuItems" :key="item.label" class="hidden lg:flex">
       <li class="p-2 flex ml-6" @mouseover="handleMouseOver" @mouseleave="leaveMouseOver">
-        <a class="flex items-center cursor-pointer" @click="scrollToSection(item.link)">
+        <button class="flex items-center cursor-pointer" @click="scrollToSection(item.link)">
           <span class="font-robotoMono">{{ item.number }}</span>
           <div class="bar mx-[15px] h-[2px] w-[20px] bg-white transition-width duration-300 ease-in-out"></div>
-          <h3 class="font-robotoMono text-lg uppercase">{{ item.label }}</h3>
-        </a>
+          <span class="font-robotoMono text-lg uppercase">{{ item.label }}</span>
+        </button>
       </li>
     </ul>
   </nav>
 
-  <div class="my-4 flex items-center justify-center hover:scale-125 transition-transform duration-500">
+  <div class="my-10 flex items-center justify-center hover:scale-125 transition-transform duration-500">
     <RouterLink to="/contact">
       <button class="border-2 border-white h-20 w-60 rounded-full font-ubuntu text-2xl font-bold hover:bg-white hover:text-gray pointer">
         Me contacter
@@ -60,13 +60,13 @@ function scrollToSection(target) {
       <a class="p-2 mr-6 flex items-center hover:scale-110 transition-transform duration-500" href="https://www.linkedin.com/in/kevindebenedetti" target="_blank">
         <font-awesome-icon class="text-lg" :icon="['fab', 'linkedin-in']" />
         <span class="ml-3 font-ubuntu text-sm">Linkedin</span>
-        <font-awesome-icon class="ml-2 text-xs" :icon="['fas', 'arrow-up-right-from-square']" />
+        <font-awesome-icon class="ml-2 text-sm" :icon="['fas', 'arrow-up-right-from-square']" />
       </a>
 
-      <a class="p-2 flex items-center hover:scale-110 transition-transform duration-500" href="https://github.com/KevinDeBenedetti" target="_blank">
+      <a class="mt-4 p-2 flex items-center hover:scale-110 transition-transform duration-500" href="https://github.com/KevinDeBenedetti" target="_blank">
         <font-awesome-icon class="text-lg" :icon="['fab', 'github']" />
         <span class="ml-3 font-ubuntu text-sm">GitHub</span>
-        <font-awesome-icon class="ml-2 text-xs" :icon="['fas', 'arrow-up-right-from-square']" />
+        <font-awesome-icon class="ml-2 text-sm" :icon="['fas', 'arrow-up-right-from-square']" />
       </a>
 
     </div>
